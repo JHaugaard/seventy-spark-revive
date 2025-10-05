@@ -158,7 +158,7 @@ const Lightbox = ({
             src={currentPhoto.imageUrl}
             alt={currentPhoto.alt}
             className="w-full h-auto object-contain max-h-[70vh] md:max-h-[75vh]"
-            style={{ aspectRatio: "1.22 / 1" }}
+            style={{ aspectRatio: "1 / 1.22" }}
           />
         </div>
 
