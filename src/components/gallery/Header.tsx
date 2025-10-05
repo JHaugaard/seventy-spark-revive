@@ -6,17 +6,7 @@ const Header = () => {
     <header className="sticky top-0 bg-background/95 backdrop-blur-sm z-50 border-b border-border">
       <div className="max-w-[1400px] mx-auto px-6 py-6">
         <div className="flex justify-between items-start mb-6">
-          <div className="flex items-start gap-4">
-            <img 
-              src={logo} 
-              alt="Collected Light" 
-              className="h-12 w-auto flex-shrink-0"
-            />
-            <div className="space-y-1">
-              <h1 className="text-2xl font-light text-foreground leading-tight">A year of living instantly - A Polaroid per day</h1>
-              <p className="text-lg font-medium text-foreground">John Haugaard</p>
-            </div>
-          </div>
+          <h1 className="text-5xl font-light text-foreground">My 70th Year</h1>
           <nav className="flex gap-8">
             <Link
               to="/"
@@ -37,6 +27,17 @@ const Header = () => {
               Contact
             </Link>
           </nav>
+        </div>
+        <div className="flex items-start gap-4 mb-4">
+          <img 
+            src={logo} 
+            alt="Collected Light" 
+            className="h-16 w-auto flex-shrink-0"
+          />
+          <div className="space-y-1">
+            <h2 className="text-2xl font-light text-foreground leading-tight">A year of living instantly - A Polaroid per day</h2>
+            <p className="text-lg font-medium text-foreground">John Haugaard</p>
+          </div>
         </div>
         <div className="space-y-2">
           <p className="text-sm text-muted-foreground">August 13, 2023 through August 12, 2024</p>
