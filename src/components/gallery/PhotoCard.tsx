@@ -3,12 +3,25 @@ import { formatPhotoDate } from "@/utils/photoHelpers";
 
 interface PhotoCardProps {
   photo: Photo;
+  onClick: () => void;
 }
 
-const PhotoCard = ({ photo }: PhotoCardProps) => {
+const PhotoCard = ({ photo, onClick }: PhotoCardProps) => {
   return (
     <article className="group animate-fade-in">
-      <div className="relative aspect-[1.22] overflow-hidden transition-all duration-300 ease-out hover:scale-[1.03] hover:shadow-lg active:opacity-90 cursor-pointer">
+      <div
+        className="relative aspect-[1.22] overflow-hidden transition-all duration-300 ease-out hover:scale-[1.03] hover:shadow-lg active:opacity-90 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded"
+        onClick={onClick}
+        onKeyDown={(e) => {
+          if (e.key === "Enter" || e.key === " ") {
+            e.preventDefault();
+            onClick();
+          }
+        }}
+        role="button"
+        tabIndex={0}
+        aria-label={`View photo: ${photo.caption}`}
+      >
         <img
           src={photo.imageUrl}
           alt={photo.alt}
