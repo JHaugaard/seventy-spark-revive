@@ -14,6 +14,19 @@ export default {
     },
     extend: {
       colors: {
+        // Core design system colors
+        "color-primary": "hsl(var(--color-primary))",
+        "color-secondary": "hsl(var(--color-secondary))",
+        "color-accent": "hsl(var(--color-accent))",
+        "color-success": "hsl(var(--color-success))",
+        "color-warning": "hsl(var(--color-warning))",
+        "color-error": "hsl(var(--color-error))",
+        "color-neutral-light": "hsl(var(--color-neutral-light))",
+        "color-neutral-mid": "hsl(var(--color-neutral-mid))",
+        "color-neutral-dark": "hsl(var(--color-neutral-dark))",
+        "color-white": "hsl(var(--color-white))",
+        
+        // Semantic tokens for UI components
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -47,16 +60,17 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        sidebar: {
-          DEFAULT: "hsl(var(--sidebar-background))",
-          foreground: "hsl(var(--sidebar-foreground))",
-          primary: "hsl(var(--sidebar-primary))",
-          "primary-foreground": "hsl(var(--sidebar-primary-foreground))",
-          accent: "hsl(var(--sidebar-accent))",
-          "accent-foreground": "hsl(var(--sidebar-accent-foreground))",
-          border: "hsl(var(--sidebar-border))",
-          ring: "hsl(var(--sidebar-ring))",
-        },
+      },
+      spacing: {
+        'xs': 'var(--space-xs)',
+        'sm': 'var(--space-sm)',
+        'md': 'var(--space-md)',
+        'lg': 'var(--space-lg)',
+        'xl': 'var(--space-xl)',
+        '2xl': 'var(--space-2xl)',
+      },
+      maxWidth: {
+        'container': 'var(--max-width)',
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -105,6 +119,11 @@ export default {
       },
       boxShadow: {
         "subtle": "var(--shadow-subtle)",
+        "medium": "var(--shadow-medium)",
+        "large": "var(--shadow-large)",
+      },
+      fontFamily: {
+        primary: "var(--font-primary)",
       },
     },
   },
