@@ -3,42 +3,47 @@ import logo from "@/assets/collected-light-logo.png";
 
 const Header = () => {
   return (
-    <header className="sticky top-0 bg-background/95 backdrop-blur-sm z-50 border-b border-border">
-      <div className="max-w-[1400px] mx-auto px-6 py-6">
-        <div className="flex justify-between items-start mb-6">
-          <h1 className="text-5xl font-light text-foreground">My 70th Year</h1>
-          <nav className="flex gap-8">
-            <Link
-              to="/"
-              className="text-sm text-accent hover:underline transition-colors"
-            >
-              Home
-            </Link>
-            <Link
-              to="/other-work"
-              className="text-sm text-accent hover:underline transition-colors"
-            >
-              My Other Work
-            </Link>
-            <Link
-              to="/contact"
-              className="text-sm text-accent hover:underline transition-colors"
-            >
-              Contact
-            </Link>
-          </nav>
-        </div>
-        <div className="flex items-start gap-4 mb-4">
-          <img 
-            src={logo} 
-            alt="Collected Light" 
-            className="h-16 w-auto flex-shrink-0"
-          />
-          <div className="space-y-1">
-            <h2 className="text-2xl font-light text-foreground leading-tight">A year of living instantly - A Polaroid per day</h2>
-            <p className="text-lg font-medium text-foreground">John Haugaard</p>
+    <>
+      <header className="sticky top-0 bg-background/95 backdrop-blur-sm z-50 border-b border-border">
+        <div className="max-w-[1400px] mx-auto px-6 py-4">
+          <div className="flex justify-between items-start mb-4">
+            <h1 className="text-5xl font-light text-foreground">My 70th Year</h1>
+            <nav className="flex gap-8">
+              <Link
+                to="/"
+                className="text-sm text-accent hover:underline transition-colors"
+              >
+                Home
+              </Link>
+              <Link
+                to="/other-work"
+                className="text-sm text-accent hover:underline transition-colors"
+              >
+                My Other Work
+              </Link>
+              <Link
+                to="/contact"
+                className="text-sm text-accent hover:underline transition-colors"
+              >
+                Contact
+              </Link>
+            </nav>
+          </div>
+          <div className="flex items-start gap-4">
+            <img 
+              src={logo} 
+              alt="Collected Light" 
+              className="h-16 w-auto flex-shrink-0"
+            />
+            <div className="space-y-1">
+              <h2 className="text-2xl font-light text-foreground leading-tight">A year of living instantly - A Polaroid per day</h2>
+              <p className="text-lg font-medium text-foreground">John Haugaard</p>
+            </div>
           </div>
         </div>
+      </header>
+      
+      <div className="max-w-[1400px] mx-auto px-6 pt-6 pb-4">
         <div className="space-y-2">
           <p className="text-sm text-muted-foreground">August 13, 2023 through August 12, 2024</p>
           <p className="text-muted-foreground max-w-3xl">
@@ -49,7 +54,7 @@ const Header = () => {
           </p>
         </div>
       </div>
-    </header>
+    </>
   );
 };
 
