@@ -37,7 +37,7 @@ const Header = () => {
             />
             <div className="space-y-1">
               <h2 className="text-2xl font-light text-foreground leading-tight">A year of living instantly - A Polaroid per day</h2>
-              <p className="text-lg font-medium text-foreground">John Haugaard</p>
+              <p className="text-lg font-medium text-foreground font-heading">John Haugaard</p>
             </div>
           </div>
         </div>
