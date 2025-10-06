@@ -7,7 +7,7 @@ const Header = () => {
       <header className="sticky top-0 bg-background/95 backdrop-blur-sm z-50 border-b border-border">
         <div className="max-w-[1400px] mx-auto px-6 py-4">
           <div className="flex justify-between items-start mb-4">
-            <h1 className="text-5xl font-light text-foreground">My 70th Year</h1>
+            <h1 className="text-4xl font-normal text-foreground">My 70th Year</h1>
             <nav className="flex gap-8">
               <Link
                 to="/"
