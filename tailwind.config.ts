@@ -124,6 +124,8 @@ export default {
       },
       fontFamily: {
         primary: "var(--font-primary)",
+        heading: "var(--font-heading)",
+        body: "var(--font-body)",
       },
     },
   },
